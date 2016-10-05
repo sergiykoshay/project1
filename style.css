@@ -1,20 +1,63 @@
-.colors{
-	background-color: #a3d5d3;
-	color: #ffa27b;
-  
+body{
+  font-family: 'Poiret One', cursive;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+  height: 0;
+}
+.clearfix { 
+  display: inline-block; 
+}
+
+.scrollbar::-webkit-scrollbar {
+    width: 0;
+}
+ 
+
+header{
+  height:10vh;
+  background: -moz-linear-gradient(top, rgba(96,96,96,0) 0%, rgba(101,101,101,0.53) 5%, rgba(105,105,105,0.84) 9%, rgba(196,196,196,1) 98%, rgba(104,104,104,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(96,96,96,0) 0%,rgba(101,101,101,0.53) 5%,rgba(105,105,105,0.84) 9%,rgba(196,196,196,1) 98%,rgba(104,104,104,1) 100%);
+  background: linear-gradient(to bottom, rgba(96,96,96,0) 0%,rgba(101,101,101,0.53) 5%,rgba(105,105,105,0.84) 9%,rgba(196,196,196,1) 98%,rgba(104,104,104,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00606060', endColorstr='#686868',GradientType=0 );
+
+}
+.header__box{
+border-left:1px solid #444;
+}
+
+.header__box--logo{
+	
+    height: auto;
+	
+}
+
+.header__box--logo--img{
+  height: 9vh;
+  margin-top: 3px;
+}
+.header__box--menu{
+  
+}
 .parallax {
   perspective: 1px;
-  height: 100vh;
+  height: 85vh;
   overflow-x: hidden;
   overflow-y: auto;
+  
 }
 
 .parallax__group {
   position: relative;
-  height: 100vh;
+  height: 195vh;
   transform-style: preserve-3d;
+  perspective: 1px;
+  
+  
+  
 }
 
 .parallax__layer {
@@ -23,21 +66,78 @@
   right: 0;
   bottom: 0;
   left: 0;
+  
 }
 
 .parallax__layer--base {
   transform: translateZ(0);
+  z-index:1000;
+  
 }
 
 .parallax__layer--back {
-  transform: translateZ(-1px) scale(3);
-}
-.parallax-img{
+  transform: translateZ(-1px) scale(4);
+  top:45vh;
+  bottom:100vh;
+  z-index:40;
+  perspective: 1px;
+  
 
-width:100%;
-
 }
 
-.content-box{
-background-color: #a3d5d3;
+
+
+  
+.parallax__layer--back--img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border: none
 }
+
+
+
+.parallax__layer--base--content-box{
+
+  background: -moz-linear-gradient(top, rgba(155,155,155,1) 0%,
+    rgba(196,196,196,0.99) 2%,
+	rgba(226,226,226,0.87) 49%,
+	rgba(171,171,171,0.84) 62%,
+	rgba(103,103,103,0.53) 78%,
+	rgba(10,10,10,0) 100%);
+	/* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(155,155,155,1) 0%,
+    rgba(196,196,196,0.99) 2%,
+    rgba(226,226,226,0.87) 49%,
+    rgba(171,171,171,0.84) 62%,
+    rgba(103,103,103,0.53) 78%,
+    rgba(10,10,10,0) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(155,155,155,1) 0%,
+    rgba(196,196,196,0.99) 2%,
+    rgba(226,226,226,0.87) 49%,
+    rgba(171,171,171,0.84) 62%,rgba(103,103,103,0.53) 78%,
+    rgba(10,10,10,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9b9b', endColorstr='#000a0a0a',GradientType=0 ); 
+  /* IE6-9 */
+  height:50vh;
+  padding: 3vh;
+}
+.parallax__layer--base--content-box .heading{
+  font-family: 'Poiret One', cursive;
+  color:#F6AE42;
+  text-shadow: 2px 2px 1px #896751;
+}
+
+
+
+footer {
+  height: 5vh;
+  overflow:hidden;
+  }
+  
+  p.copy{
+    font-size:2vh;
+  
+  }
