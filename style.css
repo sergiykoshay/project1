@@ -122,7 +122,7 @@ border-left:1px solid #444;
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b9b9b', endColorstr='#000a0a0a',GradientType=0 ); 
   /* IE6-9 */
   height:50vh;
-  padding: 3vh;
+  padding: 3vh 3vw;
 }
 .parallax__layer--base--content-box .heading{
   font-family: 'Poiret One', cursive;
